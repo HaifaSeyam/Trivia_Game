@@ -1,0 +1,71 @@
+body {
+    background-image: url('../images/bg.png');
+}
+/*Headr, container and button styling*/
+header, .container, button {
+    text-align: center;
+    color: maroon;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+/*Headr styling*/
+header {
+    padding: 1px 0 1px 0;
+}
+h1#headerTitle {
+    font-size: 40px;
+}
+/*Container styling*/
+.container {
+    margin-top: 5px;
+}
+/*Questions styling*/
+.questions {
+    text-align: center;
+    color: maroon;
+    background-color: pink;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
+}
+h1 {
+    font-size: 30px;
+}
+span {
+    font-size: 20px;
+}
+/*Submit Button styling*/
+button {
+    background-color: pink;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*Start Page Styling*/
+div#startPage {
+    background-image: url('../images/bg.png');
+}
+h1#startPgTitle{
+    font-size: 80px;
+    text-align: center;
+    color: maroon;
+}
+button#startBtn {
+    background-color: pink;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+/*Timer Div Styling*/
+div#timer {
+    font-size: 30px;
+    text-align: center;
+    color: maroon;
+}
