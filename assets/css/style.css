@@ -63,6 +63,13 @@ button#startBtn {
     margin-left: 45%;
     margin-right: 45%;
 }
+/*Hide the header and the content of the page until Start Button is clicked*/
+header{
+    display: none;
+}
+.container {
+    display: none;
+}
 /*Timer Div Styling*/
 div#timer {
     font-size: 30px;
