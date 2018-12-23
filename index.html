@@ -6,6 +6,8 @@
         <!--Reset-->
         <link rel="stylesheet" href="assets/css/normalize.css">
         <!--Main CSS file-->
+
+        
         <link rel="stylesheet" href="assets/css/style.css">
         <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
@@ -21,7 +23,7 @@
             <p>Your browser doesn't support HTML5 audio.</p>
         </audio>-->
         <!--Start Header-->
-        <header>
+        <header class="gameHeader">
             <h1 id="headerTitle">Dexter Trivia Game</h1>
             <div id="timer"></div>
             <div id="results">
@@ -29,10 +31,57 @@
             </div>
         </header>
         <!--End Header-->
-        <!--Page Main Container-->
+        <!--Start Starting Page Div-->
+        <div id="startPage">
+            <h1 id="startPgTitle">Dexter Trivia Game</h1>
+            <button id="startBtn">Start</button>
+        </div>
+        <!--End Starting Page Div-->
+        <!--Start Page Main Container-->
         <div class="container">
-            
-        </div> 
+            <!--Start Radio Form-->
+            <form name="triviaGame" onsubmit="return onSubmit()">
+            <!--Question 1 and it's options-->
+            <div class="questions">
+                <h1>1. Dexter Morgan was played by what talented actor?</h1>
+                <input type="radio" name="question1" value="a"><span> a. Joseph Gordon-Levitt </span><br>
+                <input type="radio" name="question1" value="b"><span> b. Michael C. Hall </span><br>
+                <input type="radio" name="question1" value="c"><span> c. Joseph Gordon-Levitt </span><br>
+            </div>
+            <!--Question 2 and it's options-->
+            <div class="questions">
+                <h1>2. In what year did 'Dexter' premiere?</h1>
+                <input type="radio" name="question2" value="a"><span> a. 2003 </span><br>
+                <input type="radio" name="question2" value="b"><span> b. 2006 </span><br>
+                <input type="radio" name="question2" value="c"><span> c. 2009 </span><br>
+            </div>
+            <!--Question 3 and it's options-->
+            <div class="questions">
+                <h1>3. What was the main ingredient in most of the gallons and gallons of pretended blood used on the show?</h1>
+                <input type="radio" name="question3" value="a"><span> a. Maple syrup </span><br>
+                <input type="radio" name="question3" value="b"><span> b. Corn syrup </span><br>
+                <input type="radio" name="question3" value="c"><span> c. Coconut oil </span><br>
+            </div>
+            <!--Question 4 and it's options-->
+            <div class="questions">
+                <h1>4. Jennifer Carpenter played Dexster's adopted sister Debra. What releationship did Jinnefer Carpenter and Michael C. Hall share in real life?</h1>
+                <input type="radio" name="question4" value="a"><span> a. They are cousins </span><br>
+                <input type="radio" name="question4" value="b"><span> b. They are actually sister and brother </span><br>
+                <input type="radio" name="question4" value="c"><span> c. They were married </span><br>
+            </div>
+            <!--Question 5 and it's options-->
+            <div class="questions">
+                <h1>5. What character on the show was loosely based on real-life BTK serial killer Dennis Rader?</h1>
+                <input type="radio" name="question5" value="a"><span> a. Arthur Mitchell </span><br>
+                <input type="radio" name="question5" value="b"><span> b. Harry Morgan </span><br>
+                <input type="radio" name="question5" value="c"><span> c. Special Agent Frank Lundy </span><br>
+            </div>
+            <!--Submit Button-->
+            <button type="submit">Done</button>
+            </form>
+            <!--End Radio Form-->
+        </div>
+        <!--End Page Main Container-->
         <!--Main JS file-->
         <script src="assets/javascript/app.js"></script>
     </body>
