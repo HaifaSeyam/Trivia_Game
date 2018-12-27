@@ -6,12 +6,12 @@ window.onload = function () {
         $(".container").show();
         $(".gameHeader").show();
         $("#restartBtn").hide();
-        runTimer();
+        runTimer(30, "timer");
     });
 };
-
+  
 //variables for timer functions
-var timer = 31;
+//var timer = 31;
 var intervalId;
 
 /*Once Submit button is clicked, onSubmit function will be called
@@ -21,7 +21,6 @@ function onSubmit(){
     var correctAnswers = 0;
     var wrongAnswers = 0;
     var unAnswered = 0;
-
     //Number of questions as a counter to be used in the for loops
     var numOfQuestions = 5;
 
@@ -66,21 +65,45 @@ function onSubmit(){
     //Stop the timer and hide it
     stop();
     $("#timer").hide();
+    //Hiding the questions after submession
+    $("#triviaContent").hide();
+    $(".container").css("border", "0");
+    
     //Show the restart button
     $("#restartBtn").show();
     $("#restartBtn").on("click", function() {
         location.reload(true);
     });
-        
+      
     return false;
 }
 
+var seconds = 31;
+runningTimer.innerHTML = ("<div>Time remaining: " + timer + "</div>");
+
 //Timer functions
-function runTimer() {
-    clearInterval(intervalId);
-    intervalId = setInterval(decrement, 1000);
+function runTimer(seconds, timerDiv) {
+    //clearInterval(intervalId);
+    //intervalId = setInterval(decrement, 1000);
+    var runningTimer = document.getElementById("timer");
+    runningTimer.innerHTML = ("<div>Time remaining: " + seconds + "</div>");
+    if (seconds < 1) {
+        clearTimeout(timer);
+        runningTimer.innerHTML = ("<div> Time's Up </div>");
+        $("#restartBtn").show();
+        $("#restartBtn").on("click", function() {
+            location.reload(true);
+        });
+        $("#triviaContent").hide();
+        $(".container").css("border", "0");
     }
+    seconds--;
+    var timer = setTimeout ("runTimer (" + seconds + ",' " + timerDiv + " ')", 1000);
     
+    }
+
+    
+/*
 var runningTimer = document.getElementById("timer");
 function decrement() {
     timer--;
@@ -93,7 +116,7 @@ function decrement() {
             location.reload(true);
         });
     }
-}
+}*/
     
 function stop() {
     clearInterval(intervalId);

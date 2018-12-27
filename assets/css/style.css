@@ -63,6 +63,16 @@ button#startBtn {
     margin-left: 45%;
     margin-right: 45%;
 }
+button#restartBtn {
+    background-color: pink;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 45%;
+    margin-right: 45%;
+    display: none;
+}
 /*Hide the header and the content of the page until Start Button is clicked*/
 header{
     display: none;
