@@ -12,3 +12,6 @@ If the user unanswered any question, his unanswered questions will be incremente
 The results will only be displayed when the timer is out.
 
 Once the user get his results, he can restart the game.
+
+#### Deployed Link
+https://haifaseyam.github.io/Trivia_Game/
