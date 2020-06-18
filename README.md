@@ -1,5 +1,5 @@
 # Trivia_Game
-WHen the user clcik on start button, the game will start by doing the following:
+When the user click on start button, the game will start by doing the following:
 - Display five questions with three optional answers for each question. 
 - a Timer of 30 seconds will be displayed on the screen.
 
